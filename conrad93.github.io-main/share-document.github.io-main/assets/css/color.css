@@ -1,0 +1,23 @@
+:root{
+    --primaryDark: #222831;
+    --primaryLight: #f7f6e7;
+    --secondaryDark: #393e46;
+    --secondaryLight: #e7e6e1;
+    --infoDark: #7bc74d;
+    --infoLight: #f2a154;
+    --textDark: #eeeeee;
+    --textLight: #314e52;
+    --shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.dark-theme{
+    --primaryColor: var(--primaryDark);
+    --secondaryColor: var(--secondaryDark);
+    --lightColor: var(--infoDark);
+    --textColor: var(--textDark);
+}
+.light-theme{
+    --primaryColor: var(--primaryLight);
+    --secondaryColor: var(--secondaryLight);
+    --lightColor: var(--infoLight);
+    --textColor: var(--textLight);
+}

@@ -1,0 +1,45 @@
+.navbar{
+    background-color: var(--primaryColor);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    box-shadow: var(--shadow);
+    transition: background-color 0.5s;
+}
+.navbar-logo{
+    margin-left: 10%;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--textColor);
+    transition: color 1s;
+}
+.navbar-item{
+    margin-right: 10%;
+    display: flex;
+    align-items: center;
+}
+.switch{
+    display: block;
+    width: 30px;
+    border-radius: 50px;
+    border: 1px solid var(--textColor);
+    padding: 0 5px;
+    box-sizing: border-box;
+    cursor: none;
+    box-shadow: var(--shadow);
+    transition: background-color 0.5s, border 1s;
+}
+.switch-input{
+    display: none;
+}
+.switch-slider{
+    background-color: var(--lightColor);
+    transition: all 0.5s;
+    border-radius: 34px;
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+}
+.switch-input:checked + .switch-slider{
+    transform: translateX(8px);
+}

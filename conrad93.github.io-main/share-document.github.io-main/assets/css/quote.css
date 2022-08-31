@@ -1,0 +1,14 @@
+#quoteDiv{
+    width: 80%;
+    color: var(--textColor);
+    transition: color 1s;
+}
+#quoteDiv h2{
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    padding: 0px 15px;
+}
+#quoteDiv p{
+    text-align: end;
+    padding: 0px 15px;
+}

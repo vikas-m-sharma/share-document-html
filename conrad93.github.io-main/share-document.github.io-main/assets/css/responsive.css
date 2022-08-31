@@ -1,0 +1,171 @@
+@media screen and (max-width: 1024px) {
+    #contactForm{
+        width: 50%
+    }
+    .clipboardModalContent{
+        width: 50%
+    }
+}
+@media screen and (max-width: 900px) {
+    h3{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 28px;
+    }
+    p{
+        font-size: 14px;
+    }
+    .icon{
+        font-size: 20px;
+    }
+    .navbar{
+        padding: 10px 15px;
+    }
+    .face{
+        display: none;
+    }
+    .home-title h1{
+        font-size: 36px;
+    }
+    .home-title button{
+        padding: 10px 24px;
+        font-size: 14px;
+        margin: 15px 5px 0px 0px;
+    }
+    .about-container{
+        grid-template-columns: auto auto;
+    }
+    #contactForm{
+        width: 60%
+    }
+    #contactForm input[type=submit], input[type=reset] {
+        padding: 10px 20px;
+    }
+    .footer-icon a{
+        font-size: 20px;
+    }
+    .tooltip-text{
+        font-size: 14px;
+    }
+    .clipboardModalContent{
+        width: 60%
+    }
+}
+@media screen and (max-width: 600px) {
+    .navbar{
+        padding: 5px 10px;
+    }
+    .navbar-logo{
+        margin-left: 5%;
+    }
+    .navbar-item{
+        margin-right: 5%;
+    }
+    #home{
+        width: 90%
+    }
+    #about{
+        width: 90%
+    }
+    #quoteDiv{
+        width: 90%
+    }
+    #contact{
+        width: 90%
+    }
+    .about-container{
+        grid-template-columns: auto;
+    }
+    #contactForm{
+        width: 70%
+    }
+    .clipboardModalContent{
+        width: 70%
+    }
+    .clipboardModalBody input{
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+    .clipboardModalBody button{
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+    footer{
+        margin: 0% 5%;
+        flex-direction: column;
+    }
+    .footer-icon{
+        padding: 10px;
+    }
+}
+@media screen and (max-width: 350px) {
+    .navbar-logo{
+        font-size: 20px;
+    }
+    .section{
+        margin: 10% 0% 0% 0%;
+    }
+    #contactForm{
+        width: 75%
+    }
+    .clipboardModalContent{
+        width: 75%
+    }
+    .clipboardModalBody input{
+        width: 80%;
+    }
+    footer{
+        flex-direction: column;
+    }
+    .footer-icon{
+        padding: 10px;
+    }
+    .tooltip .tooltip-text{
+        display: none;
+    }
+}
+@media screen and (max-width: 300px) {
+    h3{
+        font-size: 16px;
+    }
+    h2{
+        font-size: 24px;
+    }
+    p{
+        font-size: 12px;
+    }
+    .navbar-logo{
+        font-size: 16px;
+    }
+    .switch{
+        display: flex;
+        padding: 5px;
+    }
+    .switch-slider{
+        height: 8px;
+        width: 8px;
+    }
+    .switch-input:checked + .switch-slider{
+        transform: translateX(10px);
+    }
+    .home-title h1{
+        font-size: 24px;
+    }
+    .home-title button{
+        padding: 8px 20px;
+        font-size: 12px;
+    }
+    .skills-ul{
+        margin: 0px 10px 10px 20px;
+    }
+    #contactForm{
+        width: 80%;
+    }
+    #contactForm input[type=submit], input[type=reset] {
+        padding: 8px 16px;
+    }
+    .clipboardModalContent{
+        width: 80%
+    }
+}

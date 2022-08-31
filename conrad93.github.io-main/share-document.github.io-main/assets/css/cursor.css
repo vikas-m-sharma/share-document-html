@@ -1,0 +1,19 @@
+.cursor{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    border-radius: 50%;
+    pointer-events: none;
+    display: none;
+}
+#cursor1{
+    background-color: var(--textColor);
+    width: 2.5px;
+    height: 2.5px;
+}
+#cursor2{
+    border: 2.5px solid var(--textColor);
+    transition: 0.1s;
+    width: 25px;
+    height: 25px;
+}

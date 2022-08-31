@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Conrad - Web Developer</title>
+        <meta name="description" content="Conrad Nunes, web developer, resume">
+        <meta name="keywords" content="conrad93, Conrad Nunes, web developer, resume">
+        <meta name="author" content="Conrad Nunes">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- favicon -->
+        <link rel="icon" href="assets/images/ctree.ico">
+        <!-- font -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+        <!-- CSS -->
+        <link rel="stylesheet" href="assets/css/color.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/loader.css">
+        <link rel="stylesheet" href="assets/css/cursor.css">
+        <link rel="stylesheet" href="assets/css/navbar.css">
+        <link rel="stylesheet" href="assets/css/home.css">
+        <link rel="stylesheet" href="assets/css/about.css">
+        <link rel="stylesheet" href="assets/css/quote.css">
+        <link rel="stylesheet" href="assets/css/contact.css">
+        <link rel="stylesheet" href="assets/css/footer.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        <!-- Scripts -->
+        <script src="https://kit.fontawesome.com/e1949be7bd.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="assets/js/main.js" defer></script>
+    </head>
+    <body>
+
+        <!-- loader -->
+        <div class="loader">
+            <div class="loading-spinner">
+                <div class="mid-loading-spinner">
+                    <div class="inner-loading-spinner"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- main container -->
+        <div class="main light-theme">
+
+            <!-- cursor -->
+            <div id="cursor1" class="cursor"></div>
+            <div id="cursor2" class="cursor"></div>
+
+            <!-- Navbar -->
+            <header>
+                <nav class="navbar">
+                    <div class="navbar-logo">
+                        <span>&lt;/&gt;</span>
+                    </div>
+                    <div class="navbar-item">
+                        <label class="switch">
+                            <input class="switch-input" type="checkbox"/>
+                            <span class="switch-slider"></span>
+                        </label>
+                    </div>
+                </nav>
+            </header>
+
+            <!-- Home -->
+            <section class="section">
+                <div id="home">
+                    <div class="home-title">
+                        <h1>
+                            I'm <span class="neon-lights">Conrad</span>
+                            <br>
+                            Web Developer
+                        </h1>
+                        <button class="tooltip">
+                            <span class="tooltip-text">Download resume.</span>
+                            <a href="assets/documents/conrad-nunes.pdf" download="conrad-resume">Resume</a>
+                        </button>
+                        <button onclick="webShare()">Share</button>
+                    </div>
+                    <div class="face">
+                        <div class="eyes left-eye"></div>
+                        <div class="eyes right-eye"></div>
+                        <div class="lips"></div>
+                    </div>
+                </div>
+            </section>
+ 
+            <!-- About -->
+            <section class="section">
+                <div id="about">
+                    <div class="tab">
+                        <button class="tablinks" onclick="openTabs(event, 'education')" id="defaultOpen">
+                            <i class="fas fa-graduation-cap"></i>
+                        </button>
+                        <button class="tablinks" onclick="openTabs(event, 'certification')">
+                            <i class="fas fa-award"></i>
+                        </button>
+                        <button class="tablinks" onclick="openTabs(event, 'experience')">
+                            <i class="fas fa-business-time"></i>
+                        </button>
+                        <button class="tablinks" onclick="openTabs(event, 'skills')">
+                            <i class="fas fa-laptop-code"></i>
+                        </button>
+                    </div>
+                    <div id="education" class="tabcontent">
+                        <h3>Education</h3>
+                        <p>Bachelor of Science in Information Technology</p>
+                        <p>2016-2019</p>
+                    </div>
+                    <div id="certification" class="tabcontent">
+                        <h3>Certification</h3>
+                        <p>Web Development</p>
+                        <p>2019-2020</p>
+                    </div>
+                    <div id="experience" class="tabcontent">
+                        <h3>Experience</h3>
+                        <p>Trainee Software Engineer</p>
+                        <p>2020-Present</p>
+                    </div>
+                    <div id="skills" class="tabcontent">
+                        <h3>Skills</h3>
+                        <div class="skills-container">
+                            <div class="skills-ul">
+                                <ul>
+                                    <li>JavaScript</li>
+                                    <li>PHP</li>
+                                    <li>HTML/CSS</li>
+                                    <li>Ctrl+C/Ctrl+V</li>
+                                </ul>
+                            </div>
+                            <div class="skills-ul">
+                                <ul>
+                                    <li>Angular</li>
+                                    <li>Laravel</li>
+                                    <li>Express.js</li>
+                                    <li>Bootstrap</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Quote -->
+            <section class="section">
+                <div id="quoteDiv">
+                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                    <p>- Author</p>
+                </div>
+            </section>
+
+            <!-- Contact -->
+            <section class="section">
+                <div id="contact">
+                    <form id="contactForm" action="mailto:nunes.conrad93@gmail.com" method="post" enctype="text/plain">
+                        <h3>CONTACT</h3>
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" value="" class="inputGlass" placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" value="" class="inputGlass" placeholder="john.doe@example.com">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" class="inputGlass" placeholder="Write message here..." rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" class="inputGlass" value="Send">
+                            <input type="reset" class="inputGlass" value="Reset">
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer>
+                <div>
+                    <p id="date-time"></p>
+                </div>
+                <div class="footer-icon">
+                    <a href="https://www.instagram.com/conrad_nunes/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCDyi992niPoY7iA8kV9Fo8g" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://github.com/conrad93" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/conrad93/" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </footer>
+
+            <!-- Modal -->
+            <div class="msgModal">
+                <p>No message</p>
+            </div>
+            <div class="clipboardModal">
+                <div class="clipboardModalContent">
+                    <div class="clipboardModalHeader">
+                        <span onclick="clipboardModalClose()" class="close">&times;</span>
+                        <h4>Web Share API is not supported.</h4>
+                    </div>
+                    <div class="clipboardModalBody">
+                        <input id="linkInput" type="text" value="https://conrad93.github.io/" readonly>
+                        <button onclick="copyLink()">Copy Link</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </body>
+</html>

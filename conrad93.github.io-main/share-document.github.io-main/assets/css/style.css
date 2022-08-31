@@ -1,0 +1,115 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    cursor: none;
+}
+.main{
+    display: none;
+    opacity: 0;
+    background-color: var(--secondaryColor);
+    transition: opacity 1s ease-in, background-color 0.5s;
+}
+h3{
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--textColor);
+    margin: 16px 0px;
+    padding: 5px;
+    transition: color 1s;
+}
+h2{
+    font-size: 32px;
+}
+p{
+    font-size: 16px;
+    font-weight: 500;
+}
+.section{
+    height: auto;
+    margin: 12.5% 0% 0% 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.msgModal{
+    display: none;
+    position: fixed;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    z-index: 3;
+    padding: 0px 10px;
+    border-radius: 10px;
+    background-color: var(--textColor);
+    color: var(--primaryColor);
+    animation: fadeIn 1s;
+}
+.clipboardModal{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+.clipboardModalContent{
+    position: relative;
+    margin: 50px auto;
+    width: 30%;
+    border-radius: 10px;
+    background-color: var(--primaryColor);
+    color: var(--textColor);
+}
+.close{
+    float: right;
+    font-weight: bold;
+    font-size: 24px;
+}
+.close:hover, .close:focus {
+    color: var(--lightColor);
+}
+.clipboardModalHeader {
+    padding: 1px 10px;
+}
+.clipboardModalBody {
+    padding: 10px;
+}
+.clipboardModalBody input{
+    border-radius: 10px;
+    border: none;
+    cursor: none;
+    padding: 5px 10px;
+    outline: none;
+}
+.clipboardModalBody button{
+    background-color: transparent;
+    border: 1px solid var(--lightColor);
+    outline: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    transition: background-color 0.5s, color 1s;
+    cursor: none;
+    font-weight: bold;
+    color: var(--textColor);
+}
+.clipboardModalBody button:hover{
+    background-color: var(--lightColor);
+    border: 1px solid transparent;
+    box-shadow: var(--shadow);
+}
+@keyframes fadeIn{
+    from{
+        top: 100%;
+        opacity: 0;       
+    }
+    to{
+        top: 85%;
+        opacity: 1;
+    }
+}
